@@ -118,3 +118,10 @@ This is achieved using the **chown** command
 >
 `chown -h vincent:staff _hello`
 >
+
+## 102-if_only
+The script changes the owner of the file hello to betty only if it is owned by the user guillaume. The file hello will be in the working directory. This is achieved by using the **chown** command
+
+>
+`chown --from=guillaume betty hello`
+>
