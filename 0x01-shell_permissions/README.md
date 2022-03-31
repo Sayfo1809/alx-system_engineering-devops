@@ -109,3 +109,12 @@ The script changes the owner to vincent and the group owner to staff for all the
 >
 `chown vincent:staff *`
 >
+
+## 101-symbolic_link_permissions
+The script changes the owner and the group owner of _hello to vincent and staff respectively.
+    The file _hello is in the working directory and it is a symbolic link.
+This is achieved using the **chown** command
+
+>
+`chown -h vincent:staff _hello`
+>
