@@ -104,4 +104,8 @@ The script that changes the group owner to school for the file hello, contained 
 >
 
 ## 100-change_owner_and_group
-The script changes the owner to vincent and the group owner to staff for all the files and directories in the working directory, this is achieved by means of the **** command
+The script changes the owner to vincent and the group owner to staff for all the files and directories in the working directory, this is achieved by means of the **chown** command
+
+>
+`chown vincent:staff *`
+>
