@@ -4,7 +4,7 @@
 The script switches the current user to the user betty, using the **su** command
 
 >
-`su - betty`
+`su betty`
 >
 
 ## 1-who_am_i
