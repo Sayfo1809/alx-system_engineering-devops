@@ -58,8 +58,6 @@ The script duplicates the last line of the file iacta. This is achieved by retri
 
 The script deletes all the regular files (not the directories) with a **.js** extension that are present in the current directory and all its subfolders, using the **find** command.
 
-> `find . -name "*.js" -delete`
-
 ## 11-directories
 
 The script counts the number of directories and sub-directories in the current directory, icluding hidden directories. This is achived by pipelining the **find** and **wc** command
@@ -77,3 +75,9 @@ The script displays the 10 newest files in the current directory, using a pipeli
 The script takes a list of words as input and prints only words that appear exactly once. It is assumed that the list will be the first link of the pipe and then the script will join and complete the pipiline. The commands used are: **sort** and **uniq**
 
 > `cat list`(assumed) `sort | uniq -u`
+
+## 14-findthatword
+
+The script displays lines containing the pattern “root” from the file /etc/passwd, using the **grep** command
+
+> `grep -a "root" /etc/passwd`
