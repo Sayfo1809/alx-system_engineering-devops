@@ -62,6 +62,18 @@ The script deletes all the regular files (not the directories) with a **.js** ex
 
 ## 11-directories
 
-The script counts the number of directories and sub-directories in the current directory, icluding hidden directories. This is achived by pipelining the **ls** and **wc** command
+The script counts the number of directories and sub-directories in the current directory, icluding hidden directories. This is achived by pipelining the **find** and **wc** command
 
-> `ls | wc -l`
+> `find . ./ -type d | wc -l`
+
+## 12-newest_files
+
+The script displays the 10 newest files in the current directory, using a pipeline of the **ls** and **head** command
+
+> `ls -lt | head`
+
+## 13-unique
+
+The script takes a list of words as input and prints only words that appear exactly once. It is assumed that the list will be the first link of the pipe and then the script will join and complete the pipiline. The commands used are: **sort** and **uniq**
+
+> `cat list`(assumed) `sort | uniq -u`
