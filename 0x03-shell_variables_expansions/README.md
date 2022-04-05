@@ -37,6 +37,13 @@ The script lists all local variables and environment variables, and functions, u
 The script creates a new local variable., with the following parameters:
 > - name: __BEST__
 > - value: __School__
-This is achieved us the **** command.
 
 `BEST='School'`
+
+## 7-create_global_variable
+The script creates a new global variable, with the following parameters:
+> - name: __BEST__
+> - value: __School__
+This is achieved using the **export** command
+
+`export BEST='School'`
