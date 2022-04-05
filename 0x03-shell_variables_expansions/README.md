@@ -105,3 +105,8 @@ This is achieved using the **printf** command.
 The script encodes and decodes text using the rot13 encryption, making an assumption that ASCII is used. This is achieved using the **tr** command
 
 `tr 'A-Ma-mN-Zn-z' 'N-Zn-zA-Ma-m'`
+
+## 102-odd
+The script prints every odd numbered lines from the input. This is achieved using the **paste** and **cut** commands in a pipeline.
+
+`paste - - | cut -f1`
