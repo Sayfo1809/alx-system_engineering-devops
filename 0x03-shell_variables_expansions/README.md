@@ -47,3 +47,8 @@ The script creates a new global variable, with the following parameters:
 This is achieved using the **export** command
 
 `export BEST='School'`
+
+## 8-true_knowledge
+The script prints the result of the addition of 128 with the value stored in the environment variable **TRUEKNOWLEDGE**. this is achieved by means of the **echo** command.
+
+`echo $((128 + $TRUEKNOWLEDGE))`
