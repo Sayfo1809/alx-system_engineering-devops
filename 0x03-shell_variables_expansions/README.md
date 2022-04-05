@@ -101,3 +101,7 @@ This is achieved using the **printf** command.
 
 `printf '%x\n' $DECIMAL`
 
+## 101-rot13
+The script encodes and decodes text using the rot13 encryption, making an assumption that ASCII is used. This is achieved using the **tr** command
+
+`tr 'A-Ma-mN-Zn-z' 'N-Zn-zA-Ma-m'`
