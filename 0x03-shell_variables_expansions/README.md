@@ -52,3 +52,8 @@ This is achieved using the **export** command
 The script prints the result of the addition of 128 with the value stored in the environment variable **TRUEKNOWLEDGE**. this is achieved by means of the **echo** command.
 
 `echo $((128 + $TRUEKNOWLEDGE))`
+
+## 9-divide_and_rule
+The script prints the result of **POWER** divided by **DIVIDE**, *POWER* and *DIVIDE* are environment variables. This is achieved using the **echo** command.
+
+`echo $(( $POWER / $DIVIDE ))`
