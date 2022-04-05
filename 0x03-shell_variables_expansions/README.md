@@ -27,3 +27,8 @@ The script counts the number of directories in the PATH, using the **PATH** comm
 The scipt lists environment variables, using the **printenv** command
 
 > `printenv`
+
+## 5-local_variables
+The script lists all local variables and environment variables, and functions, using the **set** command
+
+> `set`
