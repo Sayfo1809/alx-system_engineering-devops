@@ -19,6 +19,11 @@ The script adds **/action** to the **PATH**, such that */action* is the last dir
 > `export PATH=$PATH:/action`
 
 ## 3-paths
-The script counts the number of directories in the PATH, using the **** command.
+The script counts the number of directories in the PATH, using the **PATH** command in a pipeline.
 
 > `echo $PATH | tr -s ':' '\n' | wc -l`
+
+## 4-global_variables
+The scipt lists environment variables, using the **printenv** command
+
+> `printenv`
