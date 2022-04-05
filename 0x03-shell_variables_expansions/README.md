@@ -73,3 +73,17 @@ The script converts a number from base 2 to base 10.
 This is achieved by using the **echo** command
 
 `echo $(( 2#$BINARY ))`
+
+## 12-combinations
+The script prints all possible combinations of two letters, except oo.
+> - Letters are lower cases, from a to z
+> - One combination per line
+> - The output should be alpha ordered, starting with aa
+
+This is achieved by using a pipeline with the following steps
+> 1. Print two letters
+> 2. Trancate the results
+> 3. Make sure the results does not include oo
+
+
+`echo {a..z}{a..z} | tr ' ' '\n' | grep -v "oo"`
