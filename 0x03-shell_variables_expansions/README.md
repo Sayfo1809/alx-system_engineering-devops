@@ -92,3 +92,12 @@ This is achieved by using a pipeline with the following steps
 The script prints a number stored in the environment variable, **NUM** with two decimal places, using the **printf** command.
 
 `printf '%.2f\n' $NUM`
+
+## 100-decimal_to_hexadecimal
+The script converts a number from base 10 to base 16.
+
+> - The number in base 10 is stored in the environment variable, **DECIMAL**
+This is achieved using the **printf** command.
+
+`printf '%x\n' $DECIMAL`
+
