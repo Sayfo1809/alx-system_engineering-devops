@@ -65,3 +65,11 @@ The script displays the result of **BREATH** to the power **LOVE**
 This is achieved using the **echo** command.
 
 > `echo $(( $BREATH ** $LOVE ))`
+
+## 11-binary_to_decimal
+The script converts a number from base 2 to base 10.
+> - The number in base 2 is stored in an environment variable, **BINARY**
+> - The script should displays the number in base 10
+This is achieved by using the **echo** command
+
+`echo $(( 2#$BINARY ))`
