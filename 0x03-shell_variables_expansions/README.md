@@ -87,3 +87,8 @@ This is achieved by using a pipeline with the following steps
 
 
 `echo {a..z}{a..z} | tr ' ' '\n' | grep -v "oo"`
+
+## 13-print_float
+The script prints a number stored in the environment variable, **NUM** with two decimal places, using the **printf** command.
+
+`printf '%.2f\n' $NUM`
