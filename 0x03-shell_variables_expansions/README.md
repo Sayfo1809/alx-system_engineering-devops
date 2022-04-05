@@ -54,6 +54,14 @@ The script prints the result of the addition of 128 with the value stored in the
 `echo $((128 + $TRUEKNOWLEDGE))`
 
 ## 9-divide_and_rule
-The script prints the result of **POWER** divided by **DIVIDE**, *POWER* and *DIVIDE* are environment variables. This is achieved using the **echo** command.
+The script prints the result of **POWER** divided by **DIVIDE**, which are environment variables. This is achieved using the **echo** command.
 
 `echo $(( $POWER / $DIVIDE ))`
+
+## 10-love_exponent_breath
+The script displays the result of **BREATH** to the power **LOVE**
+> - BREATH and LOVE are environment variables
+> - The script should display the result, followed by a new line
+This is achieved using the **echo** command.
+
+> `echo $(( $BREATH ** $LOVE ))`
