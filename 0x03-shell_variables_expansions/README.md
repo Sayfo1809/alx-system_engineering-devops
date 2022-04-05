@@ -4,10 +4,21 @@
 The script creates an alias, with the following parameters:
 - name: *ls*
 - value: *rm **
+This is achieved using the **alias** command
 
 > `alias ls='rm *'`
 
 ## 1-hello_you 
-The script prints **hello user**, where user is the current Linux user.
+The script prints **hello user**, where user is the current Linux user, using the **echo** command
 
 > `echo hello $USER`
+
+## 2-path
+The script adds **/action** to the **PATH**, such that */action* is the last directory the shell looks into when looking for a program. This is achieved using the **export** command
+
+> `export PATH=$PATH:/action`
+
+## 3-paths
+The script counts the number of directories in the PATH, using the **** command.
+
+> `echo $PATH | tr -s ':' '\n' | wc -l`
